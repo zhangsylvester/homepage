@@ -1,0 +1,85 @@
+/*body {
+    margin: 61.8px auto;
+    width: 61.8%;
+    font-size: 12pt;
+    line-height: 1.75em;
+    font-family: Georgia, serif;
+    color: #333;
+}*/
+
+body {
+  margin: 61.8px auto;
+  width: 61.8%;
+  font-size: 12pt;
+  line-height: 1.75em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+    font-family: Georgia, serif;
+}
+
+p {
+    font-size: 12pt;
+    line-height: 1.4em;
+    color: #333;
+}
+
+footer {
+    border-top: 1px solid #d5d5d5;
+    font-size: .8em;
+}
+
+#navbar {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 61.8%;
+  display: block;
+  transition: top 0.3s;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+/*
+#navbar {
+  background-color: #f3f3f3;
+  border: 1px solid #e7e7e7;
+  position: fixed;
+  top: -50px;
+  width: 61.8%;
+  display: block;
+  transition: top 0.3s;
+}
+#navbar a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+  color: #666;
+}
+#navbar a:hover:not(.active) {
+  background-color: #ddd;
+}
+#navbar a.active {
+  color: white;
+  background-color: #4CAF50;
+}
+*/
