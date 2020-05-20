@@ -11,6 +11,10 @@ h1 {
     font-family: Georgia, serif;
 }
 
+h4 {
+ line-height: normal; 
+}
+
 p {
     font-size: 12pt;
     line-height: 1.4em;
