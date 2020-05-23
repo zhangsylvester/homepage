@@ -51,7 +51,8 @@ My email is: zhan5102(#)umn(d0t)edu
 		<h3 id="research">Research</h3>
                 <p>My interest is in algebraic combinatorics. Specifically, I am interested in combinatorial representation theory, cluster algebras, discrete integrable systems, and lattice models.</p>
 
-		<h3><ahref='#/' id='expAll' class='exp' style="text-decoration:normal">Papers</a></h3>
+		<h3>Papers</h3> 
+		<button id="expand" onclick="openAll()" float="right">Expand All +</button>
 		<details>
                 <summary>
 		<strong>Rowmotion Orbits of Trapezoid Posets.</strong> (with Q. Dao, J. Wellman and C. Yost-Wolff.) 
@@ -93,22 +94,25 @@ var currentScrollPos = window.pageYOffset;
 </script>
 	
 <script>
-// Reference the toggle link
-var xa = document.getElementById('expAll');
 
-// Register link on click event
-xa.addEventListener('click', function(e) {
-  e.target.classList.toggle('exp');
-  e.target.classList.toggle('col');
-  var details = document.querySelectorAll('details');
-  Array.from(details).forEach(function(obj, idx) {
-    if (e.target.classList.contains('exp')) {
-      obj.open = true;
-    } else {
-      obj.open = false;
-    }
-  });
-}, false);
+var elems = document.getElementsByTagName("details");
+
+function openAll() {
+  for (var i = 0; i <= 50; i++){
+    elems[i].setAttribute("open", "true");
+  }
+  document.getElementById("expand").setAttribute( "onClick", "javascript: closeAll();" );
+  document.getElementById("expand").innerHTML = "Collapse All -";
+}
+
+function closeAll() {
+  for (var i = 0; i <= 50; i++){
+    elems[i].removeAttribute("open");
+  }
+  document.getElementById("expand").setAttribute( "onClick", "javascript: openAll();" );
+  document.getElementById("expand").innerHTML = "Expand All +";
+}	
+	
 </script>
 	
 </body>
