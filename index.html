@@ -52,7 +52,7 @@ My email is: zhan5102(#)umn(d0t)edu
                 <p>My interest is in algebraic combinatorics. Specifically, I am interested in combinatorial representation theory, cluster algebras, discrete integrable systems, and lattice models.</p>
 
 		<h3>Papers</h3> 
-		<button id="expand" onclick="openAll()" float="right">Expand All +</button>
+		<button id="expand" onclick="openAll()" style="float: right;">Expand All +</button>
 		<details>
                 <summary>
 		<strong>Rowmotion Orbits of Trapezoid Posets.</strong> (with Q. Dao, J. Wellman and C. Yost-Wolff.) 
@@ -98,15 +98,15 @@ var currentScrollPos = window.pageYOffset;
 var elems = document.getElementsByTagName("details");
 
 function openAll() {
-  for (var i = 0; i <= 50; i++){
+  for (var i = 0; i <= 1; i++){
     elems[i].setAttribute("open", "true");
   }
   document.getElementById("expand").setAttribute( "onClick", "javascript: closeAll();" );
-  document.getElementById("expand").innerHTML = "Collapse All -";
+  document.getElementById("expand").innerHTML = "Hide All -";
 }
 
 function closeAll() {
-  for (var i = 0; i <= 50; i++){
+  for (var i = 0; i <= 1; i++){
     elems[i].removeAttribute("open");
   }
   document.getElementById("expand").setAttribute( "onClick", "javascript: openAll();" );
