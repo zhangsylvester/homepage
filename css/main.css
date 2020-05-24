@@ -56,3 +56,17 @@ footer {
   float: right;
 }
 
+summary{
+}
+
+.one {
+    float: left;
+    text-align: left;
+}
+.two {
+    float: right;
+    text-align: right;
+}
+
+
+
