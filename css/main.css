@@ -29,7 +29,8 @@ footer {
 }
 
 #navbar {
-  background-color: #333;
+  /*background-color: #333;*/
+  background-color: #fefbd8;
   position: fixed;
   top: 0;
   width: 61.8%;
@@ -68,5 +69,8 @@ span{
     text-align: right;
 }
 
+ol li{
+  background-color: #d5f4e6;
+}
 
 
