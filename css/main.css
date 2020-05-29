@@ -77,23 +77,23 @@ ol li{
 }
 
 /* unvisited link */
-a:link {
+#main a:link {
   color: green;
   text-decoration: underline;
 }
 
 /* visited link */
-a:visited {
+#main a:visited {
   color: darkred;
 }
 
 /* mouse over link */
-a:hover {
+#main a:hover {
   color: darkblue;
   text-decoration: none;
 }
 
 /* selected link */
-a:active {
+#main a:active {
   color: blue;
 
