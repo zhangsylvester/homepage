@@ -22,26 +22,7 @@ p {
     text-align: justify;
     text-justify: auto;
 }
-/* unvisited link */
-a:link {
-  color: green;
-  text-decoration: underline;
-}
 
-/* visited link */
-a:visited {
-  color: darkred;
-}
-
-/* mouse over link */
-a:hover {
-  color: darkblue;
-  text-decoration: none;
-}
-
-/* selected link */
-a:active {
-  color: blue;
 
 footer {
     border-top: 1px solid #d5d5d5;
@@ -95,4 +76,24 @@ ol li{
   border-radius: 1px;
 }
 
+/* unvisited link */
+a:link {
+  color: green;
+  text-decoration: underline;
+}
+
+/* visited link */
+a:visited {
+  color: darkred;
+}
+
+/* mouse over link */
+a:hover {
+  color: darkblue;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: blue;
 
