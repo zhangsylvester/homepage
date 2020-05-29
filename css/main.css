@@ -31,6 +31,7 @@ footer {
 #navbar {
   /*background-color: #333;*/
   background-color: #80ced6;
+  border-radius: 5px;
   position: fixed;
   top: 0;
   width: 61.8%;
@@ -71,6 +72,7 @@ span{
 
 ol li{
   background-color: #d5f4e6;
+  border-radius: 10px;
 }
 
 
