@@ -43,7 +43,7 @@ footer {
 #navbar a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #262626;
   text-align: center;
   padding: 15px;
   text-decoration: none;
@@ -51,7 +51,7 @@ footer {
 }
 
 #navbar a:hover {
-  background-color: #99ccff;
+  background-color: #8c8c8c;
   color: black;
 }
 
@@ -72,7 +72,7 @@ span{
 }
 
 ol li{
-  background-color: #c2faff;
+  background-color: #b3b3b3;
   border-radius: 1px;
 }
 
