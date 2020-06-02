@@ -67,13 +67,14 @@ footer {
   float: right;
 }
 
-
-
-
 #main details > summary{
 padding: 2px;
 cursor: pointer;
 } 
+
+#main calandar details summary::-webkit-details-marker {
+  float: right;
+}
 
 span{
 }
