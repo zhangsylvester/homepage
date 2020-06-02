@@ -71,7 +71,17 @@ footer {
 #calendar{
 }
 
+#calendar details > summary {
+  padding: 4px;
+ cursor: pointer;
+}
+
 #calendar details summary::-webkit-details-marker {float: right;}
+
+#main details > summary{
+padding: 2px;
+cursor: pointer;
+} 
 
 span{
 }
