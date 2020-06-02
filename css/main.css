@@ -68,7 +68,10 @@ footer {
 }
 
 
+#calendar{
+}
 
+#calendar details summary::-webkit-details-marker {float: right;}
 
 span{
 }
