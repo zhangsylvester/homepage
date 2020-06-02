@@ -73,7 +73,7 @@ cursor: pointer;
 } 
 
 #main calandar details summary::-webkit-details-marker {
-  float: right;
+  float: right; padding:4px;
 }
 
 span{
