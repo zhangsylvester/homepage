@@ -31,11 +31,11 @@ MathJax.Hub.Config({
 		<a href="#home">Home</a>
 		<a href="#research">Research</a>
 		<a href="#teaching">Teaching</a>
-		<a href="#about">About</a>
+		<a href="#miscellaneous">Miscellaneous</a>
 		
 		<div class="nav-right">
 			<a href="https://arxiv.org/a/0000-0002-4617-5901.html">ArXiv</a>
-		        <a href="https://orcid.org/0000-0002-4617-5901">ORCiD</a>
+		    <a href="https://orcid.org/0000-0002-4617-5901">ORCiD</a>
 		</div>
 	</div>
         
@@ -47,16 +47,16 @@ MathJax.Hub.Config({
 		
 		<p>I am soon-to-be a first year graduate student in <a href="https://math.umn.edu">Mathematics</a> at the <a href="https://twin-cities.umn.edu/">University of Minnesota</a>, the same place where I received my bachelors degrees in Mathematics and Quantitative Economics.</p>
 		
-		<h3> Contact Info</h3>
+		<h3>Contact Info</h3>
 		
 		
 		<div id="calendar">
 			<span style="float:left;text-align:left;">
-					Email address: zhan5102(&alpha;&tau;)umn(&delta;&omicron;&tau;)edu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				Email address: zhan5102(&alpha;&tau;)umn(&delta;&omicron;&tau;)edu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			</span>
 		<details>
 			<summary style="text-align:right;">
-				Calender
+			    Calender
 			</summary>
 			<div class="responsiveCal" style="margin:auto;">
 			<iframe src="https://calendar.google.com/calendar/b/1/embed?height=500&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=emhhbjUxMDJAdW1uLmVkdQ&amp;color=%23039BE5&amp;showDate=1&amp;showPrint=0&amp;showTabs=1&amp;showCalendars=0&amp;showTz=1&amp;mode=WEEK" style="border:solid 0px #777" width="920" height="500" frameborder="0" scrolling="no"></iframe>
@@ -100,50 +100,51 @@ MathJax.Hub.Config({
 		
 		
                
-		
+		<h3 id="miscellaneous">miscellaneous</h3>
+		<details>
+			<summary>
+				SageMath codes
+			</summary>
+			<ul>
+				<li style="background:none;">
+				</li>
+			</ul>
+		</details>
 
-		<h3 id="about">About Me</h3>
-		<!-- <p>My name is <a href="https://dictionary.writtenchinese.com/#sk=%E5%BC%A0%E6%96%87%E6%B3%BD&svt=pinyin">张文泽</a> := Zhang, Wen Ze, and I go by Sylvester. My last name is pronounced <i>jahng</i>. 
-			I publish under Sylvester W. Zhang.
-			I was born in <a href="https://en.wikipedia.org/wiki/Benxi">BenXi</a>, and grew up in <a href="https://en.wikipedia.org/wiki/Shenyang">ShenYang</a>, LiaoNing. I now live in Minneapolis, Minnesota.
-		</p>-->
-			
 	</div>
 
-<script>
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-60px";
-  }
-  prevScrollpos = currentScrollPos;
-}
-</script>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+    } else {
+    	document.getElementById("navbar").style.top = "-60px";
+    }
+    prevScrollpos = currentScrollPos;}
+    </script>
 	
-<script>
+    <script>
+    var elems = document.getElementsByTagName("details");
 
-var elems = document.getElementsByTagName("details");
+    function openAll() {
+      for (var i = 1; i <= 2; i++){
+        elems[i].setAttribute("open", "true");
+      }
+      document.getElementById("expand").setAttribute( "onClick", "javascript: closeAll();" );
+      document.getElementById("expand").innerHTML = "Hide All -";
+    }
 
-function openAll() {
-  for (var i = 1; i <= 2; i++){
-    elems[i].setAttribute("open", "true");
-  }
-  document.getElementById("expand").setAttribute( "onClick", "javascript: closeAll();" );
-  document.getElementById("expand").innerHTML = "Hide All -";
-}
-
-function closeAll() {
-  for (var i = 1; i <= 2; i++){
-    elems[i].removeAttribute("open");
-  }
-  document.getElementById("expand").setAttribute( "onClick", "javascript: openAll();" );
-  document.getElementById("expand").innerHTML = "Expand All +";
-}	
+    function closeAll() {
+      for (var i = 1; i <= 2; i++){
+        elems[i].removeAttribute("open");
+      }
+      document.getElementById("expand").setAttribute( "onClick", "javascript: openAll();" );
+      document.getElementById("expand").innerHTML = "Expand All +";
+    }	
 	
-</script>
+    </script>
 	
 </body>
 	
