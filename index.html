@@ -99,7 +99,19 @@ MathJax.Hub.Config({
 		</details>	
 		</ol>
 		
-		
+		<h3>In Progress</h3>
+		<ol reversed style="margin-left:0px; padding: 0;list-style-position: inside;">
+			<li><strong>A Lattice Model for LLT Polynomials.</strong> with M. Curran, C. Yost-Wolff. and V. Zhang (2020)</li>
+		        <details style="text-align: justify">
+				<summary style="text-align: justify">
+					Abstract.  
+					 <a href="files/CurranYostWolffZhangZhang2019.pdf"> draft (.pdf)</a> </span>
+				</summary>
+                <div style="font-size=10pt">
+			We construct a family of 2 dimensional lattice models depending on a positive integer $n$ whose partition functions are equal to the LLT polynomials of Lascoux, Leclerc and Thibon (originally named $n$-ribbon Schur functions). We conjecture that our lattice model is solvable for all $n$, and compute the Yang-Baxter equations for up to $n=3$.
+				</div>
+                </details>
+		</ol>
                
 		<h3 id="miscellaneous">Miscellaneous</h3>
 		<details>
@@ -148,7 +160,7 @@ MathJax.Hub.Config({
     var elems = document.getElementsByTagName("details");
 
     function openAll() {
-      for (var i = 1; i <= 2; i++){
+      for (var i = 1; i <= 3; i++){
         elems[i].setAttribute("open", "true");
       }
       document.getElementById("expand").setAttribute( "onClick", "javascript: closeAll();" );
@@ -156,7 +168,7 @@ MathJax.Hub.Config({
     }
 
     function closeAll() {
-      for (var i = 1; i <= 2; i++){
+      for (var i = 1; i <= 3; i++){
         elems[i].removeAttribute("open");
       }
       document.getElementById("expand").setAttribute( "onClick", "javascript: openAll();" );
