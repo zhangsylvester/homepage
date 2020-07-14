@@ -44,9 +44,9 @@ p {
 .gradient {
   align-items: stretch;
   margin: 1em 0;
-  height: 0.3em;
+  height: 0.5em;
   text-align:left;
-  line-height: 0.3em;
+  line-height: 0.5em;
   color: black;
   background: white;
   background-position: center;
