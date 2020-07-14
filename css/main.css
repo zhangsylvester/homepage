@@ -37,8 +37,9 @@ p {
   align-items: stretch;
   margin: 1em 0;
   height: 2em;
-  line-height: 0.4em;
+  line-height: 2em;
   color: black;
+  background-size: auto 20px ;
   background: linear-gradient(to left, #666666 0%, #FFFFFF 100%);  
 }
 
