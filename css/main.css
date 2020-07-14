@@ -33,22 +33,25 @@ p {
 
 /* Divider */
 
+.divider {
+  display: flex;
+  &:after {
+    content: "";
+    flex: 1;
+  }
+}
+
 .gradient {
   align-items: stretch;
   margin: 1em 0;
-  height: 2em;
-  line-height: 2em;
+  height: 0.3em;
+  text-align:left;
+  line-height: 0.3em;
   color: black;
-  background-size: auto 20px ;
-  background-position: center;
-  background: linear-gradient(to left, #666666 0%, #FFFFFF 100%);  
-}
-
-.divider
-{
-  position: relative;
-  margin-top: 90px;
-  height: 1px;
+  background: white;
+  &:after {
+    background: linear-gradient(to right, white 2% , black 80%);
+  }
 }
 
 .div-transparent:before
