@@ -49,8 +49,10 @@ p {
   line-height: 0.3em;
   color: black;
   background: white;
+  background-position: center;
   &:after {
-    background: linear-gradient(to right, white 2% , black 80%);
+    background: linear-gradient (to right, white 2% , black 80%);
+    background-position: center;
   }
 }
 
