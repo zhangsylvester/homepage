@@ -32,22 +32,14 @@ p {
 }
 
 /* Divider */
+
 .gradient {
-  height: 20px;
-  position: relative;
-  width: 100%;
-  background: radial-gradient(ellipse farthest-side at top center, rgba(0,0,0,0.08), transparent);
-}
-.gradient:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0px;
-  right: 0;
-  left: 0;
-  height: 3px;
-  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(rgba(0,0,0,0.02)), color-stop(rgba(0,0,0,0.02)), to(transparent));
-  background: linear-gradient(left, transparent, rgba(0,0,0,0.02), rgba(0,0,0,0.02), transparent);
+  align-items: stretch;
+  margin: 1em 0;
+  height: 2em;
+  line-height: 2em;
+  color: black;
+  background: linear-gradient(to left, #666666 0%, #FFFFFF 100%);  
 }
 
 .divider
