@@ -184,6 +184,10 @@ input, select, textarea {
 	.mystyle-alt h1,.mystyle-alt h2,.mystyle-alt h3,.mystyle-alt h4, .mystyle-alt h5, .mystyle-alt h6{
     color: #00001a;
 }
+    .mystyle-alt strong, .mystyle-alt b{
+    	color: #00001a;
+    	font-weight: bold;
+    }
 	
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
