@@ -29,6 +29,7 @@ MathJax.Hub.Config({
 		<link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
         <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css" />
         <link href='https://fonts.googleapis.com/css?family=Karma' rel='stylesheet' type="text/css" />
+        <link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
         <script src="https://kit.fontawesome.com/yourcode.js"></script>
 	</head>
 	<body class="is-preload">
@@ -39,7 +40,7 @@ MathJax.Hub.Config({
 				<div class="inner" style="">
 					<nav>
 						<ul>
-							<li style="color:white;">Sylvester W. Zhang</li>
+							<li style="color:white; font-family: Georgia, serif;">Sylvester W. Zhang</li>
 							<li><a href="#intro">Welcome</a></li>
 							<li><a href="#about">About me</a></li>
 							<li><a href="#research">Research</a></li>
@@ -55,14 +56,24 @@ MathJax.Hub.Config({
 			<div id="wrapper">
 
 				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
+					<section id="intro" class="wrapper mystyle fullscreen fade-up">
 						<div class="inner">
-							<h1 style="font-family: 'Karma';">Sylvester W. Zhang</h1>
-							<h2 style="font-family: STFangsong;">张文泽</h2>
-							<p>Welcome to my homepage.<!-- --></p>
-							<ul class="actions">
-								<li><a href="#about" class="button scrolly small"><i class="fas fa-angle-double-down"></i></a></li>
-							</ul>
+							<div style="float:left;background-color: black;opacity: .8;border-radius: 25px;">
+								
+								    <h1 style="margin-left:25px; margin-top:25px;margin-right:25px;line-height: 1.3; color:white; font-family: 'Karma'; font-size:2em; color:white;font-weight: bold;">Sylvester W. Zhang</h1>
+								    <h1 style="margin-left:25px; line-height: 1.3; color:white; font-family: STFangsong; font-size:1.7em; color:white; font-weight: bold;">张文泽</h1>
+								    <p style="margin-left:25px;margin-bottom:25px;">Welcome to my homepage.</p>
+								    <!--<span style="line-height:1.7;text-align:right;" class="actions">
+								    	<a href="#about" class="button scrolly small"><i class="fas fa-angle-double-down"></i></a>
+								    </span>-->
+							    
+							</div>
+							<!--
+							<div style="float:bottom;">
+							    <ul class="actions">
+								    <li><a href="#about" class="button scrolly small"><i class="fas fa-angle-double-down"></i></a></li>
+							    </ul>
+						    </div>-->
 						</div>
 					</section>
 
@@ -78,7 +89,8 @@ MathJax.Hub.Config({
 										I am currently working on algebraic combinatorics under the guidance of Pasha Pylyavskyy. <!--During my undergraduate times, I have also benefited a lot from the mentorships of Ben Brubaker, Gregg Musiker and Vic Reiner.--></p>
 								</div>
 							</div>
-							<img src="images/no-headshot.png" alt=" " height="26%" width="26%" style="margin-top:10px;margin-right:10px;" data-position="center center" />
+							<div class="images" style="">
+							<img src="images/no-headshot.png" alt=" " height="300px" width="300px" style="margin-left:40px;margin-top:40px;margin-right:40px;" data-position="center center center center" /></div>
 						</section>
 						<section style="background-color:#3771bb;height:auto;">
 							<div class="content" style="width:auto;">
@@ -315,7 +327,7 @@ MathJax.Hub.Config({
 				<div class="inner" style="height:60%;">
 					<ul class="menu">
 						<!--<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>-->
-						<li>The views and opinions expressed in this page are strictly those of the page author. The contents of this page have not been reviewed or approved by the University of Minnesota.</li>
+						<li style="color:#CCDDFA;">The views and opinions expressed in this page are strictly those of the page author. The contents of this page have not been reviewed or approved by the University of Minnesota.</li>
 					</ul>
 				</div>
 			</footer>
