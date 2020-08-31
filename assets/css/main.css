@@ -3956,3 +3956,14 @@ input, select, textarea {
 
 		}
 /* Add On*/
+
+#Abs > div {
+	font-size:11pt;
+	border-radius: 15px;
+	border: 1.5px solid rgb(22,67,141);
+}
+
+#Abs p{
+	margin:10px 10px 10px 10px;
+}
+
