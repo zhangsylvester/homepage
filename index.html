@@ -1,374 +1,181 @@
-<!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
 <html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Collapsible sidebar using Bootstrap 4</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome JS -->
+    
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Bootstrap Sidebar</h3>
+                <strong>BS</strong>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-home"></i>
+                        Home
+                    </a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Home 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-briefcase"></i>
+                        About
+                    </a>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-copy"></i>
+                        Pages
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-image"></i>
+                        Portfolio
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-question"></i>
+                        FAQ
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-paper-plane"></i>
+                        Contact
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
+                </li>
+                <li>
+                    <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
 <!--
-	Make sure MathJax works
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Toggle Sidebar</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
 -->
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  "HTML-CSS": { linebreaks: { automatic: true, width: "75% container" } }, 
-  tex2jax: {
-    inlineMath: [['$','$'], ['\\(','\\)']],
-    processEscapes: true
-  }
-});
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
 
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
 
-	<head>
-		<title>Sylvester W. Zhang</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
-        <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css" />
-        <link href='https://fonts.googleapis.com/css?family=Karma' rel='stylesheet' type="text/css" />
-        <link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
-        <script src="https://kit.fontawesome.com/yourcode.js"></script>
-	</head>
-	<body class="is-preload">
+            <h2>Collapsible Sidebar Using Bootstrap 4</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-		<!-- Sidebar -->
-			<section id="sidebar" style="background-color:rgb(22,67,141)">
-				
-				<div class="inner" style="">
-					<nav>
-						<ul>
-							<li style="color:white; font-family: Georgia, serif;">Sylvester W. Zhang</li>
-							<li><a href="#intro">Welcome</a></li>
-							<li><a href="#about">About me</a></li>
-							<li><a href="#research">Research</a></li>
-							<li><a href="#teaching">Teaching</a></li>
-							<li><a href="#misc">Miscellany</a></li>
-							<li><a href="#contact">Contact</a></li>
-						</ul>
-					</nav>
-				</div>
-			</section>
+            <div class="line"></div>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+            <h2>Lorem Ipsum Dolor</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-				<!-- Intro -->
-					<section id="intro" class="wrapper mystyle fullscreen fade-up">
-						<div class="inner">
-							<div style="float:left; margin-left:0px;">
-								<div style="float:left;background-color: black;opacity: .7;border-radius: 25px;">
-									    <h1 style="margin-left:25px; margin-top:25px;margin-right:25px;line-height: 1.3; color:white; font-family: 'Karma'; font-size:2em; color:white;font-weight: bold;">Sylvester W. Zhang</h1>
-									    <h1 style="margin-left:25px; line-height: 1.3; color:white; font-family: STFangsong; font-size:1.7em; color:white; font-weight: bold;">张文泽</h1>
-									    <p style="margin-left:25px;margin-bottom:25px;">Welcome to my homepage.</p>   
-								</div>
-								<br style="clear:both" />
-								<div style=" padding:0;">
-									<ul class="actions fit" style="padding:0;margin-left:0px;margin-top:17px;padding: 0;width:100%">
-										<li style="width:100%;padding:0;"><a href="#about" class="button scrolly fit" style="background-color: black;opacity: .7;border-radius:15px;"><i class="fas fa-angle-double-down"> Read More</i></a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</section>
+            <div class="line"></div>
 
-				<!-- One -->
-					<section id="about" class="wrapper mystyle spotlights">
-						<section style="height:auto;">
-							
-							<div class="content">
-								<div class="inner">
-									<h2>About Me</h2>
-									<p style="color:#CCDDFA;">
-										I am a first year Ph.D. student in Mathematics at the University of Minnesota, the same place where I did my undergraduate works. <br>
-										I am currently working on algebraic combinatorics under the guidance of Pasha Pylyavskyy. <!--During my undergraduate times, I have also benefited a lot from the mentorships of Ben Brubaker, Gregg Musiker and Vic Reiner.--></p>
-								</div>
-							</div>
-							<div class="images" style="">
-							<img src="images/no-headshot.png" alt=" " height="300px" width="300px" style="margin-left:40px;margin-top:40px;margin-right:40px;" data-position="center center center center" /></div>
-						</section>
-						<section style="background-color:#3771bb;height:auto;">
-							<div class="content" style="width:auto;">
-								<div class="inner" style="margin:0;">
-									<h2>Short CV</h2>
-									<div class="table-wrapper">
-									    <table  border="1" width=100% style="color:#CCDDFA;">
-											<tbody>
-												<tr>
-													<td>Ph.D. Mathematics</td>
-													<td>University of Minnesota - Twin Cities, School of Mathematics</td>
-													<td>2020 Sep - current</td>
-												</tr>
-												<tr>
-													<td>B.S. Mathematics</td>
-													<td>University of Minnesota - Twin Cities, Collage of Science and Engineering</td>
-													<td>2016 Sep - 2020 May</td>
-												</tr>
-												<tr>
-													<td>B.AQ. Economics</td>
-													<td>University of Minnesota - Twin Cities, Collage of Liberal Arts</td>
-													<td>2016 Sep - 2020 May</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-									<ul class="actions">
-										<li><a class="button icon solid fa-download">Download CV</a></li>
-										<li><a href="https://arxiv.org/a/0000-0002-4617-5901.html" target="_blank"class="button icon solid ">ArXiv</a></li>
-										<li><a href="https://orcid.org/0000-0002-4617-5901" target="_blank"class="button icon solid ">ORCiD</a></li>
-										<li><a href="https://scholar.google.com/citations?user=Hw78W00AAAAJ&hl=en"target="_blank" class="button icon solid ">Scholar</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-					</section>
+            <h2>Lorem Ipsum Dolor</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-				<!-- Two -->
-					<section id="research" class="wrapper mystyle-alt fade-up">
-						<div class="inner">
-							<h2>Research</h2>
-							<p>My research interest is in algebraic combinatorics. Specifically, I am interested in combinatorial representation theory, cluster algebras, discrete integrable systems, and lattice models.</p>
-							<span  style="float: right; margin-top:-5px" class="actions">
-								<a onclick="openAll()" id="expand" class="button alt small" style=" ">Expand All</a>
-								<!--<button id="expand" onclick="openAll()" style="border-radius: 6px; text-align: center;font-size: 12px; margin: 2px 1px;">Expand All +</button>-->
-							</span>
-							<h3>Papers and preprints </h3>
-							<div class="table-wrapper">
-								<table  border="1" width=100% >
-									<tbody>
-										<tr>
-											<td>
-												<strong>Rowmotion Orbits of Trapezoid Posets.</strong> with Q. Dao, J. Wellman and C. Yost-Wolff. (2020)<br>
+            <div class="line"></div>
 
-												<details style="text-align: justify">
-													<summary style="text-align: justify">
-														Abstract.  
-														<span style="float: right;">  <a href="https://arxiv.org/abs/2002.04810">arXiv</a> | <a href="files/REU19P5poster.pdf"> poster</a> </span>
-													</summary>
-													<div style="font-size:11pt;border-radius: 15px;border: 1.5px solid rgb(22,67,141);"><p style="margin:10px 10px 10px 10px;">
-														Rowmotion is an invertible operator on the order ideals of a poset which has been extensively studied and is well understood for the rectangle poset. In this paper, we show that rowmotion is equivariant with respect to a bijection of Hamaker, Patrias, Pechenik and Williams between order ideals of rectangle and trapezoid posets, thereby affirming a conjecture of Hopkins that the rectangle and trapezoid posets have the same rowmotion orbit structures. Our main tools in proving this are $K$-jeu-de-taquin and (weak) $K$-Knuth equivalence of increasing tableaux. We define <i>almost minimal tableaux</i> as a family of tableaux naturally arising from order ideals and show for any $\lambda$, the almost minimal tableaux of shape $\lambda$ are in different (weak) $K$-Knuth equivalence classes. We also discuss and make some progress on related conjectures of Hopkins on down-degree homomesy.</p>
-													</div>
-												</details>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<strong>Arborescences of Covering Graphs.</strong> with S. Chepuri, CJ Dowd, A. Hardt, G. Michel, and V. Zhang. (2019)<br>
+            <h3>Lorem Ipsum Dolor</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </div>
 
-												<details id="Abs" style="text-align: justify"> 
-													<summary style="text-align: justify">
-														Abstract.
-														<span style="float: right;"> <a href="files/ACG.pdf"> pdf </a> | <a href="https://arxiv.org/abs/1912.01060">arXiv</a> | <a href="files/REU19P3poster.pdf">poster</a></span>
-													</summary>
-													<div>
-														<p>An <i>arborescence</i> of a directed graph $\Gamma$ is a spanning tree directed toward a particular vertex $v$. The arborescences of a graph rooted at a particular vertex may be encoded as a polynomial $A_v(\Gamma)$ representing the sum of the weights of all such arborescences. The arborescences of a graph and the arborescences of a covering graph $\tilde{\Gamma}$ are closely related. Using <i>voltage graphs</i> to construct arbitrary regular covers, we derive a novel explicit formula for the ratio of $A_v(\Gamma)$ to the sum of arborescences in the lift $A_{\tilde{v}}(\tilde{\Gamma})$ in terms of the determinant of Chaiken's voltage Laplacian matrix, a generalization of the Laplacian matrix. Chaiken's results on the relationship between the voltage Laplacian and vector fields on $\Gamma$ are reviewed, and we provide a new proof of Chaiken's results via a deletion-contraction argument.</p>
-													</div>
-												</details>
-											</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-												
-						    <h3>Work in progress</h3>
-							<div class="table-wrapper">
-								<table  border="1" width=100% style=" ">
-									<tbody>
-										<tr>
-											<td>
-												<strong>A Lattice Model for LLT Polynomials.</strong> with M. Curran, C. Yost-Wolff. and V. Zhang (2020)
-												<details id="Abs" style="text-align: justify">
-													<summary style="text-align: justify">
-														Abstract.  
-														<span style="float: right;">  <a href="files/CurranYostWolffZhangZhang2019.pdf"> draft</a> (.pdf) </span>
-													</summary>
-													<div>
-														<p>We construct a family of 2 dimensional lattice models depending on a positive integer $n$ whose partition functions are equal to the LLT polynomials of Lascoux, Leclerc and Thibon (originally named $n$-ribbon Schur functions). We conjecture that our lattice model is solvable for all $n$, and compute the Yang-Baxter equation for upto $n=3$.</p> 
-													</div>
-												</details>
-											</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-							<!--<ul class="actions">
-								<li><a href="generic.html" class="button alt">Learn more</a></li>
-							</ul>-->
-						</div>
-					</section>
-				<!-- Three -->
-					<section id="teaching" class="wrapper mystyle fade-up">
-						<div class="inner">
-							<h2>Teaching</h2>
-							You can find here some supplementary materials on courses I'm teaching. For general course information (e.g. syllabus, exam dates, grades etc.) please refer to the Canvas site.
-							<h3>Current classes</h3>
-							Discussion notes of Math 1271 (012 & 015) will be posted here.
-							
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
-						</div>
-					</section>
-				<!-- Four -->
-					<section id="misc" class="wrapper mystyle-alt fade-up">
-						<div class="inner">
-							<h2>Miscellany</h2>
-							<p>A collection of random and fun things :)</p>
-							<div class="features">
-								<!-- 1 -->
-								<section>
-									<span class="icon solid major fas fa-dice-d20"></span>
-									<h3>Combinatorics at Minnesota</h3>
-									<ul style=" ">
-										<li style="background:none;"><a href="http://www-users.math.umn.edu/~reiner/combinatorics_group.html">Combinatorics Group</a></li>
-										<li style="background:none;"><a href="http://www-users.math.umn.edu/~cfraser/seminar_spring20.html">Combinatorics Seminar</a></li>
-										<li style="background:none;"><a href="http://www-users.math.umn.edu/~webst390/StudentCombinatoricsSeminar/2019.shtml">Student Combinatorics Seminar</a></li>	
-										<li style="background:none;"><a href="http://www-users.math.umn.edu/~reiner/REU/REU.html">Summmer REU</a></li>	
-									</ul>
-								</section>
-								<!-- 2 -->
-								<section>
-									<span class="icon solid major fa-code"></span>
-									<h3>Research related codes</h3>
-									<details>
-										<summary>
-											Arborescences of covering graphs
-										</summary>
-										<span style=" "><a href="codes/Graff.html">preview</a> | <a>download (.ipynb)</a></span>
-									</details>
-									<details>
-										<summary>
-											LLT polynomials
-										</summary>
-										<span style=" "><a href="LLT_polynomials.html">webapp</a> | <a>download (.py)</a></span>
-									</details>
-									<details>
-										<summary>
-											Kenyon-Wilson's Groves
-										</summary>
-									</details>
-									<ul class="actions">
-										<li><a class="button alt small">Learn more</a></li>
-									</ul>
-								</section>
-								<!-- 3 -->
-								<!--
-								<section>
-									<span class="icon solid major fas fa-guitar"></span>
-									<h3>My favorite</h3>
-									<ul style=" ">
-										<li style=" "><a href="https://youtu.be/BipvGD-LCjU">Math-based song</a></li>
-										<li style=" "><a href="https://www.texpad.com/">LaTex editor</a></li>
-										<li style=" "><a href="https://arxiv.org/abs/math/9801068">Theorem</a></li>
-											
-									</ul>
-								</section>
-								-->
-							</div>
-							
-						</div>
-					</section>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+</body>
 
-				<!-- Five -->
-					<section id="contact" class="wrapper style1 fade-up" style="background-color:#3771bb">
-						<div class="inner">
-							<h2>Contact Information and Calendar</h2>
-							<p style="color:#CCDDFA;">The best way to reach me is by email.</p>
-							<div class="split style2" >
-								
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Email</h3>
-											<a href="mailto:swzhang@umn.edu" target="_blank" style="color:#CCDDFA;">swzhang@umn.edu</a>
-										</li>
-										<li>
-											<h3 >Office</h3>
-											<a href="https://umn.zoom.us/my/sylvesterzhang" target="_blank" style="color:#CCDDFA;" onclick="return confirm('Join Zoom meeting?')" >Zoom</a>
-										</li>
-										<li>
-											<h3>Address</h3>
-											<span>206 Church Street SE<br />
-											Minneapolis, MN 55455<br />
-											USA</span>
-										</li>
-										<li>
-											<h3 >Offic Hour</h3>
-											<span>TBD</span>
-										</li>
-										<!--<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>-->
-									</ul>
-								</section>
-								<section>
-									<div class="content" style="position: relative; height:100%;">
-								<!--<h3>Calendar</h3><br>-->
-								<iframe src="https://calendar.google.com/calendar/b/1/embed?height=300&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=emhhbjUxMDJAdW1uLmVkdQ&amp;color=%23039BE5&amp;showTitle=0;showDate=1&amp;showPrint=0&amp;showTabs=1&amp;showCalendars=0&amp;showWeekends=0&amp;showTz=1&amp;mode=WEEK" style="border:solid 0px;position: relative; top:0; left: 0;right-margin:0;bottom:0; width: 100%; height: 100%;" frameborder="0" scrolling="no"></iframe>
-						    </div>
-								</section>
-							</div>
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer" class="wrapper mystyle-alt" >
-				<div class="inner" style="height:60%;">
-					<ul class="menu">
-						<!--<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>-->
-						<li style="color:#CCDDFA;">The views and opinions expressed in this page are strictly those of the page author. The contents of this page have not been reviewed or approved by the University of Minnesota.</li>
-					</ul>
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<!--
-			<script>
-				var prevScrollpos = window.pageYOffset;
-				window.onscroll = function() {
-					var currentScrollPos = window.pageYOffset;
-					if (prevScrollpos > currentScrollPos) {
-						document.getElementById("navbar").style.top = "0";
-					} else {
-						document.getElementById("navbar").style.top = "-60px";
-					}
-					prevScrollpos = currentScrollPos;
-				}
-			</script>
-			-->
-			<script>
-				var elems = document.getElementsByTagName("details");
-
-				function openAll() {
-					for (var i = 0; i <= 2; i++){
-						elems[i].setAttribute("open", "true");
-					}
-					document.getElementById("expand").setAttribute( "onClick", "javascript: closeAll();" );
-					document.getElementById("expand").innerHTML = "Hide All";
-				}
-				function closeAll() {
-					for (var i = 0; i <= 2; i++){
-						elems[i].removeAttribute("open");
-					}
-					document.getElementById("expand").setAttribute( "onClick", "javascript: openAll();" );
-					document.getElementById("expand").innerHTML = "Expand All";
-				}	
-			</script>
-	</body>
 </html>
