@@ -13,7 +13,8 @@ p {
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
-    color: #999;
+    color: #333131;
+    text-align: justify;
 }
 
 a,
@@ -30,7 +31,7 @@ a:focus {
     border: none;
     border-radius: 0;
     margin-bottom: 40px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
 }
 
 .navbar-btn {
@@ -60,7 +61,7 @@ i, span {
     align-items: stretch;;
 }
 #content {
-    margin-left:250px;
+    margin-left:300px;
     transition: all 0.4s;
 }
 #content.active{
@@ -69,9 +70,10 @@ i, span {
 #sidebar {
     position: fixed;
     height: 100%;
-    min-width: 250px;
-    max-width: 250px;
-    background: #7386D5;
+    min-width: 300px;
+    max-width: 300px;
+    /*background: #7386D5;*/
+    background:rgb(132,24,37);
     color: #fff;
     transition: all 0.3s;
 }
@@ -124,9 +126,11 @@ i, span {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    padding-left: 12.5px;
-    padding-right: 12.5px;
-    background: #6d7fcc;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    /*background: #6d7fcc;*/
+    background:  #7A0019;
    
 }
 
@@ -137,7 +141,7 @@ i, span {
 
 #sidebar ul.components {
     padding: 20px 0px;
-    border-bottom: 1px solid #47748b;
+    border-bottom: 1px solid #7A0019;;
 }
 
 #sidebar ul li a {
@@ -147,7 +151,7 @@ i, span {
 }
 
 #sidebar ul li a:hover {
-    color: #7386D5;
+    color:  #7A0019;
     background: #fff;
 }
 
@@ -158,7 +162,7 @@ i, span {
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
     color: #fff;
-    background: #6d7fcc;
+    background: #7A0019;
 }
 
 a[data-toggle="collapse"] {
@@ -176,7 +180,7 @@ a[data-toggle="collapse"] {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #6d7fcc;
+    background: #7A0019;
 }
 
 ul.CTAs {
@@ -193,14 +197,15 @@ ul.CTAs a {
 
 a.download {
     background: #fff;
-    color: #7386D5;
+    color: #7A0019;
 }
 
 a.article,
 a.article:hover {
-    background: #6d7fcc !important;
+    background: #7A0019 !important;
     color: #fff !important;
 }
+
 
 /* ---------------------------------------------------
     CONTENT STYLE
@@ -243,6 +248,62 @@ a.article:hover {
     transform: none;
     opacity: 1;
     margin: 5px auto;
+}
+/*  Papers*/
+
+.abs .card p {
+    font-size: 11pt;
+    margin-bottom:0px;
+    padding:0px;
+}
+.papers a.abs-btn {
+    padding-left: 0px;
+    background: none;
+}
+
+.papers a {
+    background: none; 
+    padding: 0px;
+}
+
+.papers a.abs-btn[aria-expanded="true"] {
+    color:black;
+    background: none;
+}
+.papers a.abs-btn[aria-expanded="true"] i {
+    transform: rotate(90deg);
+} 
+
+ul.papers{
+    padding-left: 0px;
+    list-style-position: inside;
+    list-style:none;
+}
+
+ul.papers li.details {
+    list-style-type: none;
+    padding-left: 15px;
+}
+ul.papers li.details a{
+    padding-right: 15px;
+}
+
+ul.papers li.title{
+    padding-left: 15px;
+    list-style-type:none;
+}
+ul.papers li.title:before{
+content: "\f02d"; /* FontAwesome Unicode */
+font-family: FontAwesome;
+display: inline-block;
+margin-left: -15px; /* same as padding-left set on li */
+width: 15px; /* same as padding-left set on li */
+}
+
+ul.papers li.hide{
+    list-style-type:none;
+    padding-bottom:10px;
+    margin:0px;
 }
 
 /* ---------------------------------------------------

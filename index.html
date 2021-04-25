@@ -9,6 +9,8 @@
     <title>Sylvester's Homepage</title>
 
     <!-- Bootstrap CSS CDN -->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="style.css">
@@ -17,7 +19,10 @@
     
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-
+    <!-- BS icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <!-- Acadamicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 </head>
 
 <body>
@@ -27,23 +32,25 @@
         <nav id="sidebar">
             <div>
             <div class="sidebar-header" >
-                <h3>Sylvester Zhang</h3>
+                <h3>Sylvester W. Zhang</h3>
+                <h3 style="font-family: STFangsong;">张文泽</h3>
                 <strong>SZ</strong>
             </div>
 
             <ul class="list-unstyled components">
                 <li class="active">
-                    <a href="#home">
+                    <a href="index.html">
                         <i class="fas fa-home"></i>
                         Home</a>
                 </li>
+                <!--
                 <li>
                     <a href="#">
                         <i class="fas fa-briefcase"></i>
                         About
                     </a>
                 </li>
-                <!--
+                
                 <li>
                     <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                         <i class="fas fa-copy"></i>
@@ -57,7 +64,7 @@
                 </li>
                 -->
                 <li>
-                    <a href="#">
+                    <a href="research.html">
                         <i class="fas fa-image"></i>
                         Research
                     </a>
@@ -89,8 +96,7 @@
 
         <!-- Page Content  -->
         <div id="content">
-
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" style="margin-top: 10px ;">
                 <div class="container-fluid">
 
 
@@ -99,58 +105,83 @@
                         <span></span>
                         <span></span>
                     </button>
+                    
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-align-justify"></i>
                     </button>
-                    <div>
-                        
-                    </div>
-<!--
+                    
+
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Page</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About Me</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Page</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Page</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Page</a>
+                                <a class="nav-link" href="#contact">Contact</a>
                             </li>
                         </ul>
-                    </div>-->
+                    </div>
                 </div>
             </nav>
-
-            <h2>Sylvester W. Zhang</h2>
-            
+       
+            <div class="row">
+                <div class="col-9">
+                    <h3 id="about">About me</h3>
+                    <br>
+                    <p>
+                        I am a first year Ph.D student in <a href="https://math.umn.edu/" target="black">Mathematics</a> at the <a href="https://twin-cities.umn.edu/" target="blank">University of Minnesota</a>, the same place where I did my undergraduate studies.
+                    </p>
+                    <p>
+                        I am currently working on algebraic combinatorics under the guidance of <a target="_blank" href="https://sites.google.com/site/pylyavskyy/">Pasha Pylyavskyy</a>. 
+                    </p>
+                </div>
+                <div class="col-3">
+                    <img src="images/no-headshot.png" alt=" " height="240px" width="240px" style="margin-left:0px;" data-position="center center center center" />
+                </div>
+            </div>
 
             <div class="line"></div>
-
-            <h2>Lorem Ipsum Dolor</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+            <div class="row">
+                <div class="col-4">
+                    <h3>Contact Info</h3>
+                    <p>The best way to reach me is by email.</p>
+                    <ul>
+                        <li>
+                            <h5>Email</h5>
+                            <a href="mailto:swzhang@umn.edu" target="_blank">swzhang@umn.edu</a>
+                        </li>
+                        <li>
+                            <h5 >Office</h5>
+                            <a href="https://umn.zoom.us/my/sylvesterzhang" target="_blank" onclick="return confirm('Join Zoom meeting?')" >Zoom</a>
+                        </li>
+                        <li>
+                            <h5>Address</h5>
+                            <span>206 Church Street SE<br />
+                            Minneapolis, MN 55455<br />
+                            USA</span>
+                        </li>
+                        <li>
+                            <h5>Offic Hour</h5>
+                            <span>M 9-11 AM, WF 9-10 AM</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-8" style="position: relative; ">
+                    <iframe src="https://calendar.google.com/calendar/b/1/embed?height=300&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=emhhbjUxMDJAdW1uLmVkdQ&amp;color=%23039BE5&amp;showTitle=0;showDate=1&amp;showPrint=0&amp;showTabs=1&amp;showCalendars=0&amp;showWeekends=0&amp;showTz=1&amp;mode=WEEK" style="border:solid 0px;position: relative; top:0; left: 0;right:0;bottom:0; width: 100%; height: 100%;" frameborder="0" scrolling="no"></iframe>
+            </div>
             <div class="line"></div>
-
-            <h2>Lorem Ipsum Dolor</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-            <div class="line"></div>
-
-            <h3>Lorem Ipsum Dolor</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
     </div>
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Popper.JS -->
+    <!--Popper + Bootstrap JS Bundle-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <!--
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>-->
+
 
     <script type="text/javascript">
         $(document).ready(function () {
