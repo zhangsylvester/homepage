@@ -32,6 +32,7 @@
 
     <!-- Font Awesome JS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
@@ -41,12 +42,19 @@
 
     <!-- Acadamicon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <!--Google icon-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+
 
 </head>
 
 <body>
 
     <div class="wrapper">
+        <!-- Sidebar  -->
         <!-- Sidebar  -->
         <nav id="sidebar">
             <div>
@@ -59,27 +67,59 @@
             <ul class="list-unstyled components">
                 <li>
                     <a href="index.html">
-                        <i class="fas fa-home"></i>
+                        <span><i class="fas fa-home"></i></span>
                         Home</a>
                 </li>
-
-                <li  class="active">
+                <!--
+                <li>
+                    <a href="#">
+                        <i class="fas fa-briefcase"></i>
+                        About
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-copy"></i>
+                        Pages
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                    </ul>
+                </li>
+                -->
+                <li class="active">
                     <a href="research.html">
-                        <i class="bi-grid"></i>
-                        Research
+                    <span><i class="fas fa-dna"></i></span>
+                    Research
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="fas fa-question"></i>
+                        <span><i class="fas fa-chalkboard-teacher"></i></span>
                         Teaching
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="fas fa-paper-plane"></i>
-                        Contact
+                        <span><i class="fas fa-id-badge"></i></span>
+                        <span class="hide">Curriculum</span> Vitae
                     </a>
+                </li>
+            </ul>
+            
+
+            <ul class="list-unstyled CTAs">
+                <li>
+<span><a><i class="ai ai-google-scholar-square ai-2x"></i></a></span>
+<span><a><i class="ai ai-orcid-square ai-2x"></i></a></span>
+<span><a><i class="ai ai-arxiv-square ai-2x"></i></a></span>
+<span><a><i class="ai ai-researchgate-square ai-2x"></i></a></span>
+                        
+                            
+                            
                 </li>
             </ul>
         </div>

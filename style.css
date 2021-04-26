@@ -58,11 +58,15 @@ i, span {
 .wrapper {
     display: flex;
     width: 100%;
-    align-items: stretch;;
+    align-items: stretch;
 }
 #content {
     margin-left:300px;
     transition: all 0.4s;
+}
+
+#content .row{
+    width: 100%;
 }
 #content.active{
     margin-left:105px;
@@ -96,6 +100,22 @@ i, span {
 
 #sidebar ul li a {
     text-align: left;
+}
+
+#sidebar ul li a span{
+    width: 25px;
+    text-align: center;
+}
+
+#sidebar.active ul li a span{
+    width:auto;
+}
+#sidebar ul li a span.hide{
+    width: auto;
+    text-align: auto;
+}
+#sidebar.active ul li a .hide{
+    display: none;
 }
 
 #sidebar.active ul li a {
@@ -186,15 +206,25 @@ ul ul a {
 ul.CTAs {
     padding: 20px;
 }
-
+ul.CTAs span{
+    border-radius: 5px;
+    height: 50px;
+    width: 50px;
+}
 ul.CTAs a {
     text-align: center;
     font-size: 0.9em !important;
-    display: block;
+    display: flex;
+    background-size: 40px 40px;
+    background-position: center;
     border-radius: 5px;
-    margin-bottom: 5px;
+    height: 50px;
+    width: 50px;
 }
-
+ul.CTAs a i{
+    background-size: 40px 40px;
+    background-position: center;
+}
 a.download {
     background: #fff;
     color: #7A0019;
