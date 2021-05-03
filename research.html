@@ -104,7 +104,7 @@
         <!-- Page Content  -->
         <div id="content">
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top " style="margin-top: 10px; ">
+            <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light sticky-top " style="margin-top: 10px;">
                 <div class="container-fluid">
 
 
@@ -272,6 +272,18 @@
             document.getElementById("collapse-all").innerHTML = "<i class='fas fa-plus'></i> <span>Show Abstracts</span>";
             document.getElementById("collapse-all").setAttribute( "data-transformed", "false" );
         }	
+    </script>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-80px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
     </script>
 
 </body>
