@@ -334,6 +334,9 @@ a.article:hover {
     transform: rotate(45deg);
 }
 
+#navbar{
+    transition: top 0.3s;
+}
 
 a.collapse_all span{
     display: none;
