@@ -52,13 +52,13 @@
                     Research
                     </a>
                 </li>
-                <li>
+                <li  class="active">
                     <a href="teaching.html">
                         <span><i class="fas fa-chalkboard-teacher"></i></span>
                         Teaching
                     </a>
                 </li>
-                <li   class="active">
+                <li>
                     <a href="CV.html">
                         <span><i class="fas fa-id-badge"></i></span>
                         <span class="hide">Curriculum</span> Vitae
@@ -79,10 +79,8 @@
 
         <!-- Page Content  -->
         <div id="content">
-            <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light sticky-top" style="margin-top: 10px; ">
+            <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
                 <div class="container-fluid">
-
-
                     <button type="button" id="sidebarCollapse" class="navbar-btn">
                         <span></span>
                         <span></span>
@@ -96,22 +94,28 @@
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
-                            <!--
                             <li class="nav-item">
-                                <a class="nav-link" href="#intro">Intro</a>
+                                <a class="nav-link" href="#current">Current Courses</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#pub">Publication</a>
+                                <a class="nav-link" href="#archive">Archives</a>
                             </li>
-                        -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#res">Resources</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </nav>
-
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="CV/MyCV.pdf"></iframe>
-            </div>
+            <h3 id="current">Current Classes</h3>
+            <div class="line"></div>
+            <h3 id="archive">Teaching Archives</h3>
+            <ul>
+                <li>Spring 2021: <a href="teaching/s21/math1271.html">Math 1271</a></li>
+                <li>Fall 2020: Math 1271</li>
+            </ul>
+            <div class="line"></div>
+            <h3 id="res">Resources</h3>
             <div class="line"></div>
             <p style="color:#999; font-size: 10px;">&copy; Wenze Zhang. All rights reserved.<br> The views and opinions expressed in this page are strictly those of the page author. The contents of this page have not been reviewed or approved by the University of Minnesota.</p>
         </div>
@@ -136,7 +140,6 @@
             });
         });
     </script>
-
     <script>
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function() {
